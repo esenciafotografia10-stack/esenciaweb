@@ -1,0 +1,209 @@
+.portada {
+  position: relative;
+  width: 100%;
+  height: 70vh; /* altura controlada */
+  min-height: 420px;
+  max-height: 720px;
+  overflow: hidden;
+  background: #000;
+}
+
+/* VIDEO SIN MÁRGENES */
+.video-portada {
+  display: block; /* elimina espacio fantasma */
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* se ve bien sin deformarse */
+}
+
+/* ===== CONTENIDO ===== */
+
+main {
+  background: linear-gradient(70deg, #000000, #0fa4be, #06535e, #08444e);
+  padding: 40px 0;
+}
+
+/* ===ESTILOS PARA LA PORTADA==== */
+.texportada {
+  width: 100%;
+}
+.texportada .contenido-texportada {
+  padding: 2px 2px 2px 2px;
+  text-align: center;
+}
+/* ===ESTILOS TITULO DE LA PORTADA==== */
+.texportada .contenido-texportada .tex-portada h1 {
+  color: #ffffff;
+  font-size: 45px;
+  margin-top: 10px;
+}
+/* ===ESTILOS SUBTITULO DE LA PORTADA==== */
+.texportada .contenido-texportada .tex-portada h2 {
+  color: #00e1ff;
+  font-size: 20px;
+  margin-top: 10px;
+}
+/* ===ESTILOS PARRAFO DE LA PORTADA==== */
+.texportada .contenido-texportada .tex-portada p {
+  color: #ffffff;
+  font-size: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/* ===ESTILOS BOTON DE LA PORTADA==== */
+.btn-contacto {
+  text-align: center;
+}
+.btn-contacto a {
+  margin: 0px 20px;
+  background: linear-gradient(70deg, #000000, #00393b);
+  text-decoration: none;
+  padding: 5px 20px;
+  font-size: 35px;
+  border: 2px solid #009ba1;
+  border-radius: 60px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-contacto a:hover {
+  background: linear-gradient(70deg, #000000, #00283b);
+  font-weight: bold;
+}
+
+.filmaciones-alt {
+  padding: 5rem 1.5rem;
+  margin-top: 10px;
+}
+
+.wrap {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.titulo {
+  text-align: center;
+  font-size: 2.4rem;
+  color: #000000;
+  margin-bottom: 1rem;
+}
+
+.intro {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 4rem;
+  color: #555;
+  line-height: 1.7;
+}
+
+.lista-servicios {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.item {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.item:hover {
+  transform: translateX(6px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.12);
+}
+
+.icono {
+  font-size: 2.2rem;
+  line-height: 1;
+}
+
+.item h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.25rem;
+  color: #009ca1;
+}
+
+.item p {
+  margin: 0;
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.item small {
+  display: block;
+  margin-top: 0.6rem;
+  font-size: 0.85rem;
+  color: #777;
+}
+
+.galeria-video {
+  padding: 5rem 1.5rem;
+  color: #000000;
+}
+
+.wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.galeria-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.galeria-header h2 {
+  font-size: 2.3rem;
+  margin-bottom: 0.8rem;
+  color: #ffffff;
+}
+
+.galeria-header p {
+  color: #2ee0ff;
+  max-width: 700px;
+  margin: 0 auto 40px;
+}
+
+.bloque {
+  margin-bottom: 4rem;
+}
+
+.bloque h3 {
+  margin-bottom: 1.5rem;
+  font-size: 1.4rem;
+}
+
+/* -------- Videos horizontales -------- */
+.grid-horizontal {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.grid-horizontal video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+/* -------- Reels verticales -------- */
+.grid-vertical {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+}
+
+.grid-vertical video {
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  object-fit: cover;
+  border-radius: 16px;
+}
