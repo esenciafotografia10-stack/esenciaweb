@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Esencia_Inicio</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="icon" href="img/ico.png" />
+  </head>
+  <body>
+    <header>
+      <div class="header_movil">
+        <div class="logo_movil">
+          <img src="img/logotipo.png" alt="Esencia Fotografia y Filmaciones" />
+        </div>
+
+        <label for="menu-toggle" class="menu-btn">☰</label>
+      </div>
+      <input type="checkbox" id="menu-toggle" />
+      <nav class="nav-menu">
+        <div class="logo_PC">
+          <img src="img/logotipo.png" alt="Esencia Fotografia y Filmaciones" />
+        </div>
+        <label for="menu-toggle" class="close-btn">✕</label>
+        <ul>
+          <li>
+            <input type="checkbox" id="servicios" />
+            <label for="servicios" class="btn-servicios">Servicios</label>
+            <ul class="submenu">
+              <li>
+                <a href="pages/Service/service_photo.html">Fotografía</a>
+              </li>
+              <li>
+                <a href="pages/film/film.html">Filmaciones</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="pages/produc/produc.html">Productos</a>
+          </li>
+          <li>
+            <a href="pages/bussines/bussines.html">Bussines</a>
+          </li>
+          <li>
+            <a href="pages/contact/contact.html">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="portada">
+        <div class="contenido-portada">
+          <div class="texto-portada">
+            <h1>Bienvenid@</h1>
+            <h2>Esencia Fotografía y Filmaciones</h2>
+            <p>Donde capturamos los momentos mas especiales de tu vida.</p>
+          </div>
+          <div class="btn-contacto">
+            <a href="pages/contact/contact.html">Contáctanos</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="seccion">
+      <div class="imagen">
+        <img src="img/luz-web.png" alt="FLASH" />
+      </div>
+
+      <div class="texto">
+        <h1>
+          Nos especializamos en capturar la esencia de tus momentos más
+          importantes.
+        </h1>
+        <p>
+          Nuestro objetivo es crear contenido que te permita revivir y compartir
+          tus recuerdos de manera única y emocionante.
+        </p>
+      </div>
+    </div>
+
+    <div class="seccion">
+      <div class="imagen">
+        <img
+          src="img/cobertura-fotografica.jpg"
+          alt="Capturando tus momentos"
+        />
+      </div>
+      <div class="texto">
+        <h1>
+          En Esencia Fotografía y Filmaciones, nos apasiona la fotografía y el
+          cine.
+        </h1>
+        <p>
+          Nuestro equipo de profesionales tiene años de experiencia en la
+          industria y está comprometido con la calidad y la creatividad. Nos
+          esforzamos por atender tus necesidades para crear imágenes y videos
+          auténticos y emocionales.
+          <br /><br />
+          Nuestra misión es proporcionarte contenido que capture tus momentos
+          más especiales de manera única y memorable.
+        </p>
+      </div>
+    </div>
+    <div class="ubicacion">
+      <h1>Ubicación</h1>
+
+      <h2>📍 Estamos ubicados en Calpulalpan, Tlaxcala.</h2>
+
+      <h3>
+        📌 Dirección: Priv. Camilo García Marcos s/n, Colonia San Mateo Actipan,
+        Calpulalpan, Tlaxcala, C.P. 90210
+      </h3>
+
+      <h3>🕒 Horario de atención: Con cita agendada</h3>
+
+      <h3>📞 Contacto: 749 111 0817 · esenciafotografia10@gmail.com</h3>
+
+      <h3>Estamos aquí para ti</h3>
+
+      <h2>
+        No dudes en contactarnos si deseas más información o agendar una cita.
+      </h2>
+    </div>
+
+    <div class="carrusel">
+      <div class="imagenes">
+        <img src="img/sessiones.jpg" alt="Imagen 1" />
+        <img src="img/cuadros-fotograficos-carrusel.jpg" alt="Imagen 2" />
+        <img src="img/ide-carrusel.jpg" alt="Imagen 3" />
+        <img src="img/llaveros-carrusel.jpg" alt="Imagen 4" />
+        <img src="img/album-fotografico-carrusel.jpg" alt="Imagen 5" />
+        <img src="img/restauraciones-carrusel.jpg" alt="Imagen 6" />
+      </div>
+
+      <button class="btn anterior">&#60;</button>
+      <button class="btn siguiente">&#62;</button>
+
+      <div class="indicadores"></div>
+    </div>
+
+    <footer class="footer">
+      <p>
+        &copy;2026 Esencia Fotografia y Filmaciones. Todos los derechos
+        reservados.
+      </p>
+    </footer>
+
+    <script src="js/carrusel.js"></script>
+  </body>
+</html>
