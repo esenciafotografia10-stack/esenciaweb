@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Esencia_Contacto</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="icon" href="../../img/ico.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  </head>
+  <body>
+    <header>
+      <div class="header_movil">
+        <div class="logo_movil">
+          <img src="../../img/logotipo.png" alt="Esencia Fotografia y Filmaciones" />
+        </div>
+
+        <label for="menu-toggle" class="menu-btn">☰</label>
+      </div>
+      <input type="checkbox" id="menu-toggle" />
+      <nav class="nav-menu">
+        <div class="logo_PC">
+          <img src="../../img/logotipo.png" alt="Esencia Fotografia y Filmaciones" />
+        </div>
+        <label for="menu-toggle" class="close-btn">✕</label>
+        <ul>
+             <li><a href="../../index.html">Inicio</a></li>
+          <li>
+            <input type="checkbox" id="servicios" />
+            <label for="servicios" class="btn-servicios">Servicios</label>
+            <ul class="submenu">
+              <li>
+                <a href="pages/Service/service_photo.html">Fotografía</a>
+              </li>
+              <li>
+                <a href="pages/film/film.html">Filmaciones</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="pages/produc/produc.html">Productos</a>
+          </li>
+          <li>
+            <a href="pages/bussines/bussines.html">Bussines</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="portada">
+        <div class="contenido-portada">
+          <div class="texto-portada">
+            <h1>Bienvenid@</h1>
+            <h2>Esencia Fotografía y Filmaciones</h2>
+            <p>Donde capturamos los momentos mas especiales de tu vida.</p>
+          </div>
+          <div class="btn-contacto">
+            <a href="#">Contáctanos</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+
+<section class="contacto-moderno">
+  <div class="container">
+
+    <header class="contacto-head">
+      <h2>Hablemos de tu proyecto</h2>
+      <p>Contáctanos por el medio que prefieras o envíanos un mensaje directo.</p>
+    </header>
+
+    <div class="contacto-layout">
+
+      <!-- TARJETAS DE CONTACTO -->
+      <div class="contacto-cards">
+
+        <a href="https://wa.me/527491110817" target="_blank" class="contacto-card whatsapp">
+          <i class="fab fa-whatsapp"></i>
+          <span>WhatsApp</span>
+        </a>
+
+        <a href="https://www.facebook.com/share/1Cdz3yzPot/" target="_blank" class="contacto-card facebook">
+          <i class="fab fa-facebook-f"></i>
+          <span>Facebook</span>
+        </a>
+
+        <a href="https://www.instagram.com/esencia_fotografia_filmaciones?igsh=MXRrYm80cDIwN3JqMg==" target="_blank" class="contacto-card instagram">
+          <i class="fab fa-instagram"></i>
+          <span>Instagram</span>
+        </a>
+
+        <a href="https://www.tiktok.com/@esencia.fotografi?_r=1&_t=ZS-92KrCIj4JeS" target="_blank" class="contacto-card tiktok">
+          <i class="fab fa-tiktok"></i>
+          <span>TikTok</span>
+        </a>
+
+        <a href="mailto:esenciafotografia10@gmail.com" class="contacto-card gmail">
+          <i class="fas fa-envelope"></i>
+          <span>Gmail</span>
+        </a>
+
+      </div>
+
+      <!-- FORMULARIO -->
+      <form class="contacto-form" onsubmit="enviarWhatsApp(event)">
+        <h3>Envíanos un mensaje</h3>
+        <input type="text" id="nombre" placeholder="Nombre" required>
+        <input type="email" id="correo" placeholder="Correo electrónico" required>
+        <textarea id="mensaje" placeholder="Cuéntanos qué necesitas" required></textarea>
+        <button type="submit">Enviar por WhatsApp</button>
+      </form>
+
+    </div>
+  </div>
+</section>
+
+<script>
+function enviarWhatsApp(e) {
+  e.preventDefault();
+
+  const nombre = document.getElementById('nombre').value;
+  const correo = document.getElementById('correo').value;
+  const mensaje = document.getElementById('mensaje').value;
+
+  const texto = `Hola, soy ${nombre}.%0A` +
+                `Correo: ${correo}%0A` +
+                `Mensaje: ${mensaje}`;
+
+  const telefono = '527491110817';
+  window.open(`https://wa.me/${telefono}?text=${texto}`, '_blank');
+}
+</script>
+
+
+    <footer class="footer">
+      <p>
+        &copy;2026 Esencia Fotografia y Filmaciones. Todos los derechos
+        reservados.
+      </p>
+    </footer>
+
+  </body>
+</html>
