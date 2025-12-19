@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Esencia_productos</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="../../img/ico.png" />
+  </head>
+  <body>
+    <header>
+      <div class="header_movil">
+        <div class="logo_movil">
+          <img
+            src="../../img/logotipo.png"
+            alt="Esencia Fotografia y Filmaciones"
+          />
+        </div>
+
+        <label for="menu-toggle" class="menu-btn">☰</label>
+      </div>
+      <input type="checkbox" id="menu-toggle" />
+      <nav class="nav-menu">
+        <div class="logo_PC">
+          <img
+            src="../../img/logotipo.png"
+            alt="Esencia Fotografia y Filmaciones"
+          />
+        </div>
+        <label for="menu-toggle" class="close-btn">✕</label>
+        <ul>
+          <li><a href="../../index.html">Inicio</a></li>
+          <li>
+            <input type="checkbox" id="servicios" />
+            <label for="servicios" class="btn-servicios">Servicios</label>
+            <ul class="submenu">
+              <li>
+                <a href="../Service/service_photo.html">Fotografía</a>
+              </li>
+              <li>
+                <a href="../film/film.html">Filmaciones</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="../bussines/bussines.html">Bussines</a>
+          </li>
+          <li>
+            <a href="../contact/contact.html">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="portada">
+        <div class="contenido-portada">
+          <div class="texto-portada">
+            <h1>Nuestros Productos</h1>
+            <h2>Productos personalizados y fotográficos</h2>
+            <p>diseñados para conservar y compartir tus mejores recuerdos.</p>
+          </div>
+          <div class="btn-contacto">
+            <a href="https://wa.me/527491110817">Contáctanos</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="catalogo">
+      <div class="contenedor">
+        <!-- Categoría 1 -->
+        <div class="categoria">
+          <h3>🎁 Productos Personalizados</h3>
+          <div class="grid-productos">
+            <article class="producto">
+              <div class="img-producto">
+                <img src="img/llavero.jpg" alt="LLAVERO PERSONALIZADO" />
+              </div>
+              <h4>Llavero Personalizado</h4>
+              <p>Un recuerdo único ideal para regalar en cualquier ocasión.</p>
+            </article>
+
+            <article class="producto">
+              <div class="img-producto">
+                <img src="img/taza.jpg" alt="TAZA PERSONALIZADA" />
+              </div>
+              <h4>Taza Personalizada</h4>
+              <p>
+                Diseños personalizados para uso diario o regalos especiales.
+              </p>
+            </article>
+          </div>
+        </div>
+
+        <!-- Categoría 2 -->
+        <div class="categoria">
+          <h3>🖼️ Productos Fotográficos</h3>
+          <div class="grid-productos">
+            <article class="producto">
+              <div class="img-producto">
+                <img src="img/cuadro.jpg" alt="CUADROS FOTOGRAFICO" />
+              </div>
+              <h4>Cuadro Fotográfico</h4>
+              <p>Impresión de alta calidad para decorar tus espacios.</p>
+            </article>
+
+            <article class="producto">
+              <div class="img-producto">
+                <img src="img/portaretratos.jpg" alt="PORTARRETRATOS" />
+              </div>
+              <h4>Portarretratos</h4>
+              <p>Elegantes marcos para resaltar tus fotografías favoritas.</p>
+            </article>
+          </div>
+        </div>
+
+        <!-- Categoría 3 -->
+        <div class="categoria">
+          <h3>📘 Productos Editoriales</h3>
+          <div class="grid-productos">
+            <article class="producto">
+              <div class="img-producto">
+                <img src="img/album.jpg" alt="ALBUM FOTOGRAFICO" />
+              </div>
+              <h4>Álbum Fotográfico</h4>
+              <p>
+                La mejor forma de conservar tus recuerdos de manera profesional.
+              </p>
+            </article>
+          </div>
+        </div>
+
+        <!-- Categoría 4 -->
+        <div class="categoria">
+          <h3>💌 Productos Digitales</h3>
+
+          <div class="grid-productos">
+            <article class="producto">
+              <div class="movie-producto">
+                <video controls preload="metadata">
+                  <source src="movie/invitacion.mp4" type="video/mp4" />
+                  Tu navegador no soporta video.
+                </video>
+              </div>
+
+              <h4>Invitaciones Digitales</h4>
+              <p>Invitaciones modernas y personalizadas para tus eventos.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+
+      <div class="btn-contacto">
+        <a href="#" id="abrir-modalcontrata">Cotiza con Nosotros</a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>
+        &copy;2026 Esencia Fotografia y Filmaciones. Todos los derechos
+        reservados.
+      </p>
+    </footer>
+
+    <script src="js/carrusel.js"></script>
+  </body>
+</html>
