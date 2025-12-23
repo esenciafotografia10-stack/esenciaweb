@@ -84,53 +84,90 @@ position: absolute;
   display: flex;
 }
 
-
-/* ===ESTILOS PARA LA PORTADA==== */
 .portada {
   width: 100%;
   background-image: url("../img/portada.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
+  overflow-x: hidden; /* evita desbordes horizontales */
 }
+
 .portada .contenido-portada {
   padding: 20px 20px 80px 20px;
   text-align: center;
+  max-width: 1200px; /* limita el ancho del contenido */
+  margin: 0 auto;
 }
-/* ===ESTILOS TITULO DE LA PORTADA==== */
+
+/* CONTENEDOR DEL TEXTO */
+.portada .contenido-portada .texto-portada {
+  max-width: 100%;
+  padding: 0 10px;
+}
+
+/* === TITULO === */
 .portada .contenido-portada .texto-portada h1 {
   color: #ffffff;
-  font-size: 140px;
+  font-size: clamp(42px, 6vw, 80px);
   margin-top: 120px;
+  line-height: 1.1;
+  word-wrap: break-word;
 }
-/* ===ESTILOS SUBTITULO DE LA PORTADA==== */
+
+/* === SUBTITULO === */
 .portada .contenido-portada .texto-portada h2 {
   color: #00e1ff;
-  font-size: 55px;
+  font-size: clamp(28px, 4.5vw, 55px);
   margin-top: 10px;
+  line-height: 1.2;
+  word-wrap: break-word;
 }
-/* ===ESTILOS PARRAFO DE LA PORTADA==== */
+
+/* === PARRAFO === */
 .portada .contenido-portada .texto-portada p {
   color: #ffffff;
-  font-size: 30px;
+  font-size: clamp(18px, 2.8vw, 30px);
   margin-top: 10px;
   margin-bottom: 90px;
+  line-height: 1.4;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
 }
-/* ===ESTILOS BOTON DE LA PORTADA==== */
+
+/* === BOTON === */
 .portada .contenido-portada .btn-contacto a {
   background: linear-gradient(70deg, #000000, #00393b);
   text-decoration: none;
-  padding: 5px 40px;
-  font-size: 35px;
+  padding: 8px 40px;
+  font-size: clamp(20px, 3vw, 35px);
   border: 2px solid #009ba1;
   border-radius: 60px;
   color: #fff;
   cursor: pointer;
   transition: 0.3s;
+  display: inline-block;
 }
 
 .portada .contenido-portada .btn-contacto a:hover {
   background: linear-gradient(70deg, #000000, #00283b);
   font-weight: bold;
+}
+
+/* === AJUSTES EXTRA PARA MOVIL === */
+@media (max-width: 768px) {
+  .portada .contenido-portada {
+    padding: 20px 15px 60px 15px;
+  }
+
+  .portada .contenido-portada .texto-portada h1 {
+    margin-top: 80px;
+  }
+
+  .portada .contenido-portada .texto-portada p {
+    margin-bottom: 60px;
+  }
 }
 
 
@@ -238,34 +275,4 @@ position: absolute;
   }
 
 
-  .portada {
-  width: 100%;
-  background-image: url("../img/portada.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  }
-  .portada .contenido-portada {
-    padding: 10px 10px 80px 10px;
-    text-align: center;
-  }
-  .portada .contenido-portada .texto-portada h1 {
-    font-size: 55px;
-    margin-top: 10px;
-  }
-  .portada .contenido-portada .texto-portada h2 {
-   font-size: 20px;
-  }
-  .portada .contenido-portada .texto-portada p {
-    color: #ffffff;
-    font-size: 17px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-  }
-  .portada .contenido-portada .btn-contacto a {
-    padding: 5px 40px;
-    font-size: 17px;
-    color: #fff;
-    cursor: pointer;
-    transition: 0.3s;
-  }
 }
